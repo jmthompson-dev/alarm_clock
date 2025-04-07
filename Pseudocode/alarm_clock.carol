@@ -1,0 +1,23 @@
+integer current_hour
+integer wait_hours
+integer alarm_hour
+
+Put "Enter the current time (0-23):" to output
+current_hour = Get next input
+
+Put "Enter how many hours to wait for the alarm:" to output
+wait_hours = Get next input
+
+alarm_hour = (current_hour + wait_hours) mod 24
+
+Put "Alarm Set!" to output
+Put "Current Time: " to output
+Put current_hour to output
+Put ":00" to output
+
+Put "Hours to Wait: " to output
+Put wait_hours to output
+
+Put "Alarm will go off at: " to output
+Put alarm_hour to output
+Put ":00" to output
